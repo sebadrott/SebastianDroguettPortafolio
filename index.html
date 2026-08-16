@@ -4,22 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sebastián Droguett - Portafolio</title>
+  <base target="_blank">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { width: 100%; height: 100%; overflow: hidden; background-color: #111; }
-    #pdf-container { width: 100%; height: 100vh; border: none; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background-color: #000; }
+    iframe { width: 100%; height: 100vh; border: none; }
   </style>
-  <!-- Carga la librería PDF.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf_viewer.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf_viewer.min.css">
 </head>
 <body>
 
+  <!-- Pasa el PDF por el visor embebido de Google Drive -->
   <iframe 
-    id="pdf-frame"
-    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/sebadrott/SebastianDroguettPortafolio/main/SDPortafolio.pdf#linkTarget=_blank" 
-    style="width:100%; height:100vh; border:none;">
+    src="https://docs.google.com/gview?url=https://sebadrott.github.io/SebastianDroguettPortafolio/SDPortafolio.pdf&embedded=true">
   </iframe>
 
 </body>

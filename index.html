@@ -2,16 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sebastián Droguett | Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastián Droguett - Portafolio</title>
   <style>
-    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-    iframe { width: 100%; height: 100%; border: none; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background-color: #111; }
+    #pdf-container { width: 100%; height: 100vh; border: none; }
   </style>
+  <!-- Carga la librería PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf_viewer.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf_viewer.min.css">
 </head>
 <body>
 
-  <!-- Usa el visor oficial de PDF.js configurado para abrir enlaces externos en _blank -->
-  <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/sebadrott/SebastianDroguettPortafolio/main/SDPortafolio.pdf#linkTarget=_blank"></iframe>
+  <iframe 
+    id="pdf-frame"
+    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/sebadrott/SebastianDroguettPortafolio/main/SDPortafolio.pdf#linkTarget=_blank" 
+    style="width:100%; height:100vh; border:none;">
+  </iframe>
 
 </body>
 </html>

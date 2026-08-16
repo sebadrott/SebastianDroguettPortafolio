@@ -4,30 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sebastián Droguett - Portafolio</title>
-  <!-- Fuerza que todos los enlaces de la página abran en pestaña nueva -->
+  <!-- Fuerza que todos los enlaces abran en una pestaña nueva -->
   <base target="_blank">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background-color: #0d0d0d; display: flex; flex-direction: column; align-items: center; padding: 20px 0; }
-    .page-container { position: relative; width: 90%; max-width: 1200px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-    img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    body { 
+      background-color: #0d0d0d; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      padding: 0; 
+      width: 100%;
+    }
+    .page-container { 
+      position: relative; 
+      width: 100%; 
+      max-width: 100vw; 
+      margin-bottom: 0; 
+    }
+    img { 
+      width: 100%; 
+      height: auto; 
+      display: block; 
+    }
     
-    /* Esta clase define dónde y cómo se posiciona el enlace interactivo */
+    /* Capa flotante interactiva para los enlaces */
     .link-overlay {
       position: absolute;
-      /* AJUSTA ESTOS VALORES según dónde esté el enlace en la imagen pagina1.jpg */
-      top: 45%; /* Posición vertical desde arriba */
-      left: 15%; /* Posición horizontal desde la izquierda */
-      width: 70%; /* Ancho del área del enlace */
-      height: 10%; /* Alto del área del enlace */
-      background-color: rgba(255, 255, 255, 0); /* Invisible por defecto */
+      background-color: rgba(255, 255, 255, 0); 
       display: block;
       cursor: pointer;
       border-radius: 4px;
       transition: background-color 0.3s;
     }
     .link-overlay:hover {
-      background-color: rgba(255, 255, 255, 0.1); /* Efecto hover opcional */
+      background-color: rgba(255, 255, 255, 0.12); /* Brillo sutil al pasar el cursor */
     }
   </style>
 </head>
@@ -35,27 +50,121 @@
 
   <!-- PÁGINA 1 -->
   <div class="page-container">
-    <img src="pagina1.jpg" alt="Portafolio Pagina 1">
-    <!-- Este es el enlace sobre la imagen 1. Ajusta href y la clase .link-overlay en CSS -->
-    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" class="link-overlay" title="Explorar el sistema completo"></a>
+    <img src="Portafolio-01.png" alt="Portafolio Página 1">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 45%; left: 15%; width: 70%; height: 10%;" 
+       title="Explorar"></a>
   </div>
 
   <!-- PÁGINA 2 -->
   <div class="page-container">
-    <img src="pagina2.jpg" alt="Portafolio Pagina 2">
+    <img src="Portafolio-02.png" alt="Portafolio Página 2">
   </div>
 
   <!-- PÁGINA 3 -->
   <div class="page-container">
-    <img src="pagina3.jpg" alt="Portafolio Pagina 3">
+    <img src="Portafolio-03.png" alt="Portafolio Página 3">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
   </div>
 
-  <!-- PÁGINA 4 (Sigue este patrón para todas las páginas) -->
-  <!--
+  <!-- PÁGINA 4 -->
   <div class="page-container">
-    <img src="pagina4.jpg" alt="Portafolio Pagina 4">
+    <img src="Portafolio-04.png" alt="Portafolio Página 4">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
   </div>
-  -->
+
+  <!-- PÁGINA 5 -->
+  <div class="page-container">
+    <img src="Portafolio-05.png" alt="Portafolio Página 5">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 6 -->
+  <div class="page-container">
+    <img src="Portafolio-06.png" alt="Portafolio Página 6">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 7 -->
+  <div class="page-container">
+    <img src="Portafolio-07.png" alt="Portafolio Página 7">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 8 -->
+  <div class="page-container">
+    <img src="Portafolio-08.png" alt="Portafolio Página 8">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 9 -->
+  <div class="page-container">
+    <img src="Portafolio-09.png" alt="Portafolio Página 9">
+    <a href="https://drive.google.com/file/d/1xPZq2QYpFazqiV5f6NQo0B9Wgh8NcYvQ/preview" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 10 -->
+  <div class="page-container">
+    <img src="Portafolio-10.png" alt="Portafolio Página 10">
+    <a href="https://drive.google.com/file/d/14PtNjhiriDs24_sUBqQcKml403LbFQh8/view?usp=sharing" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Ver recurso en Google Drive"></a>
+  </div>
+
+  <!-- PÁGINA 11 -->
+  <div class="page-container">
+    <img src="Portafolio-11.png" alt="Portafolio Página 11">
+    <a href="https://www.ziemax.cl/?srsltid=AfmBOopjs6nV5wFhe20K9YVCF4BgcvQwviyZdDqs8SEfddE0MyDrhpQA" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Visitar Ziemax"></a>
+  </div>
+
+  <!-- PÁGINA 12 -->
+  <div class="page-container">
+    <img src="Portafolio-12.png" alt="Portafolio Página 12">
+    <a href="https://fadop.cl/" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Visitar Fadop"></a>
+  </div>
+
+  <!-- PÁGINA 13 -->
+  <div class="page-container">
+    <img src="Portafolio-13.png" alt="Portafolio Página 13">
+    <a href="https://coanil.cl/?gad_source=1&gad_campaignid=23269917804&gbraid=0AAAAAC5xkR2LYZNTNpYr9xyVo1xqH3QA0&gclid=Cj0KCQjwnIDUBhDrARIsAJDGwStyfQwH_vtoguFoOaQVROKbH5dJJ5hSr4TFH_dzVw97S-Wf8x_XV4saAhnJEALw_wcB" 
+       class="link-overlay" 
+       style="top: 40%; left: 15%; width: 70%; height: 20%;" 
+       title="Visitar Coanil"></a>
+  </div>
+
+  <!-- PÁGINA 14 -->
+  <div class="page-container">
+    <img src="Portafolio-14.png" alt="Portafolio Página 14">
+  </div>
 
 </body>
 </html>
